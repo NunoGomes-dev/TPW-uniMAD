@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>uniMAD | Projects</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pe-icons.css" rel="stylesheet">
+    <link href="../css/prettyPhoto.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/32338f9566.js" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" href="../images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+    'use strict';
+        jQuery('body').backstretch([
+        "../images/bg/bg1.jpg",
+                "../images/bg/bg2.jpg",
+                "../images/bg/bg3.jpg"
+        ], {duration: 5000, fade: 500});
+
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{
+                latitude:40.7566,
+                longitude: -73.9863,
+            icon: { image: "../images/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: {
+                image: "../images/marker.png",
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:40.7566,
+            longitude: -73.9863,
+            zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+<body>
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+        <script src="../js/menu.js"></script>
+    </header><!--/header-->
+
+    <section id="single-page-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title">MAIN PROJECTS</h2>
+                                    <hr>
+                                    <p>FGPE - Framework for Gamified Programming Education</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="blog" class="white">
+            <div class="container">
+                <div class="gap">
+                    <a href="../index.html" class="breadcrumbs">home</a> <span class="sep">»</span> <a href="../projs.html" class="breadcrumbs">projects</a>
+                     <span class="sep">»</span> FGPE
+                    </div>
+                
+            
+               
+                    <div class="blog">
+                        <div class="blog-item">
+                            <div class="blog-content">
+                                <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="blog-featured-image" style="text-align: center;">
+                                        <img class="img-responsive img-blog" src="../images/portfolio/proj_02.jfif" style="width: 100%;" alt="" />
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="main-title">Framework for Gamified Programming Education</h3>
+                                    <div class="entry-meta">
+                                        <span><i class="fa fa-globe"></i> <a href="https://fgpe.usz.edu.pl/" target="_blank"> fgpe.usz.edu.pl/</a></span>
+                                    
+                                    </div>
+                                    <hr>
+                                    <p>
+                                        <strong>Fullname: </strong> Framework for Gamified Programming Education (FGPE)
+                                    </p>
+                                    <p>
+                                        <strong>Programme: </strong> 
+                                        <ul>
+                                            <li>Name: Erasmus+</li>
+                                            <li>Key Action: Cooperation for innovation and the exchange of good practices</li>
+                                            <li>Action Type: Strategic Partnerships for higher education</li>
+                                        </ul>                                        
+                                    </p>
+                                    <p>
+                                        <strong>Partners: </strong> 
+                                        <ul>
+                                            <li>Uniwersytet Szczeciński (Poland)</li>
+                                            <li>INESC TEC (Portugal)</li>
+                                            <li>Aalborg Universitet (Denmark)</li>
+                                            <li>Universita Degli Studi Di Napoli Parthenope (Italy)</li>  
+                                        </ul>
+                                    </p>
+                                   <p>
+                                        <strong>Members of uniMAD: </strong> Ricardo Queirós
+                                    </p>
+                                    <p>
+                                        <strong>Realization period: </strong> 01/09/2018 to 31/08/2021                                        
+                                    </p>
+                                    <p>
+                                        <strong>Description</strong><br>
+                                        Skilled programmers are in high demand in the European Union countries, and the key obstacle to satisfy this demand is the difficulty in learning programming. We believe a progress in this area can be attained with the combined use of automated assessment, which provides fast feedback to the students experimenting with their code, and gamification, which provides additional motivation for the students to intensify their learning effort. In our opinion, the availability of programming courses based on such an approach may not only improve the effectiveness of learning programming, but also extend the group of people feeling capable of effectively learning it. Nonetheless, up to this date, there are no available open collections of gamified programming exercises, no open interactive programming learning environment that would support such exercises, and even no open standard for the representation of such exercises, so that they could be developed in different educational institutions and shared among them.
+                                        <br>
+                                        The primary objective of the project is therefore to provide a framework for application of gamification to programming education, including the necessary specifications (of the gamification scheme and the exercise definition format), collection of gamified exercises (for popular programming languages) and software (a toolset for editing the exercises and an interactive learning environment providing them to the students). The target group of the project are programming instructors and students learning programming (also self-teaching).    
+                                    </p>
+                                    
+                                    <div class="gap"></div>
+                                    <span class="sep">»</span><a href="../projs.html" class="breadcrumbs">back to projects</a> 
+                                   
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                   
+                </div><!--/.row-->
+            </div>
+        </section><!--/#blog-->
+    </div>
+
+    <div id="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" style="color: white;">
+                    &copy; 2021 uniMAD. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.prettyPhoto.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/init.js"></script>
+</body>
+</html>

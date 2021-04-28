@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | uniMAD</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/bg1.jpg",
+                "images/bg/bg2.jpg",
+                "images/bg/bg3.jpg"
+            ], { duration: 5000, fade: 500, centeredY: true });
+
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    latitude: 40.7566,
+                    longitude: -73.9863,
+                    icon: {
+                        image: "images/marker.png",
+                        iconsize: [44, 44],
+                        iconanchor: [12, 46],
+                        infowindowanchor: [12, 0]
+                    }
+                }],
+                icon: {
+                    image: "images/marker.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46],
+                    infowindowanchor: [12, 0]
+                },
+                latitude: 40.7566,
+                longitude: -73.9863,
+                zoom: 14
+            });
+        });
+    </script>
+</head>
+<!--/head-->
+
+<body>
+    <div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <script src="js/menu.js"></script>
+    </header>
+    <!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <p class="boxed animation animated-item-2 fade-up">
+                                        <img src="images/logo.png" width="200" height="50" alt="">
+
+                                    </p>
+                                    <p>
+                                    <h2 class="boxed animation animated-item-1 fade-down">MEDIA ARTS AND DESIGN RESEARCH
+                                        CENTER</h2>
+
+                                    </p>
+                                    <p class="boxed animation animated-item-2 fade-up">ESMAD | P.PORTO</p>
+                                    <br>
+                                    <!--<a class="btn btn-md animation bounce-in" href="#services">About us</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="about-us" class="white">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">A Little About Us</h2>
+                            <hr>
+                            <p>Welcome to uniMAD – the Media, Arts and Design Research Centre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 fade-up">
+                        <p>uniMAD aims at developing high quality research and promoting the artistic, theoretical and
+                            technological development in Media, Cinema, Photography, Web Design, Information Technology,
+                            Graphic Design, Industrial Design and Digital Arts. The Research Centre will also strive to
+                            promote communication and cooperation among researchers and regional, national and
+                            international policy makers, so as to improve and enhance the development of specific
+                            knowledge.</p>
+                    </div>
+                    <div class="col-md-4 fade-up">
+
+                    </div>
+                </div>
+                <div class="gap"></div>
+
+                <div class="container">
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="center gap fade-down section-heading">
+                                <h2 class="main-title">Research Areas</h2>
+                                <hr>
+                                <p>uniMAD as interdisciplinary research center.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-camera fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Photography</h3>
+                                    <p>Artists and photographers endowed with skills and critical capacity to develop
+                                        photographic discourse in its various aspects, both professional and authorial.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-thumbs-o-up fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Multimedia</h3>
+                                    <p>Specialists in areas such as 3D modeling, VR/AR, interactive installations, video
+                                        games, graphic
+                                        animation and video mapping and, production and multimedia production
+                                        in general.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-ticket fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">AudioVisual</h3>
+                                    <p>Specialists with with great talent to develop concepts in the image arts, namely
+                                        in the areas of video,
+                                        photography, sound and lighting.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                    </div>
+                    <!--/.row-->
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-star fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Programming learning & gamification</h3>
+                                    <p>Reasearchers aiming to design and develop strategies, methodologies and tools to
+                                        foster the computer programming learning, highlighting gamification to engage
+                                        users in educational and business domains.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-cogs fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Cinema</h3>
+                                    <p>Professionals with higher qualifications in the field of research in photography,
+                                        documentary and fictional cinema, directing, production, sound, photography and
+                                        audiovisual direction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-google-plus fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Design</h3>
+                                    <p>Researchers with skills in three fundamental axes of design practice: laboratory
+                                        experience, authorship and innovation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                    </div>
+                    <!--/.row-->
+                </div>
+
+
+                <div class="gap"></div>
+            </div>
+        </section>
+
+
+
+        <section id="stats" class="divider-section">
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-timer bounce-in"></span></span>
+                            <h1><span class="counter">17</span></h1>
+                            <h3>Integrated Members</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
+                            <h1><span class="counter">10</span></h1>
+                            <h3>Collaborators</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
+                            <h1><span class="counter">4</span></h1>
+                            <h3>Projects</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-box2 bounce-in"></span></span>
+                            <h1><span class="counter">2</span></h1>
+                            <h3>Publications</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+        </section>
+
+
+        <section id="blog" class="white">
+            <div class="container">
+                <div class="center gap fade-down section-heading">
+                    <div class="gap"></div>
+                    <h2 class="main-title">News & Events</h2>
+                    <hr>
+                    <p>Research news and events where uniMAD members are involved</p>
+                </div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/news/drive_2021.jpg" class="img-responsive" />
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">DRIVE</h2>
+                                <div class="author">
+                                    <i class="fa fa-user"></i> By <b>RQ</b> | <i class="fa fa-clock-o"></i> <time
+                                        datetime="2021-01-03">April 16, 2021</time>
+                                </div>
+                                <div>
+                                    DRIVE is a cycle of conferences promoted by the Master in Design and intrinsic to
+                                    the theme of research. Next Saturday, April 17, 2021, starting at 9:45 am, the third
+                                    edition of DRIVE - Design Related Investigation will take place, which will be
+                                    registered online via Zoom.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/proj_03.jfif" class="img-responsive" />
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">“CONTRAST” supported by DGARTES!</h2>
+                                <div class="author">
+                                    <i class="fa fa-user"></i> By <b>RQ</b> | <i class="fa fa-clock-o"></i> <time
+                                        datetime="2021-01-03">March 08th, 2021</time>
+                                </div>
+                                <div>
+                                    "CONTRAST: Multidisciplinary artistic network of Art, Architecture, Design and
+                                    Photography initiatives", headed by the AAI-CEAU-FAUP research group, to be jointly
+                                    managed with ESMAD-uniMAD and i2ads-FBAUP, was selected for funding through DGARTES.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="projects/contrast.html" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/news/slate_2021.png" class="img-responsive" />
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">10th edition of SLATE in ESMAD!</h2>
+                                <div class="author">
+                                    <i class="fa fa-user"></i> By <b>RQ</b> | <i class="fa fa-clock-o"></i> <time
+                                        datetime="2021-01-03">February 03rd, 2021</time>
+                                </div>
+                                <div>
+                                    SLATE is an international symposium about languages. It is organized in three
+                                    different tracks: HHL (Natural Language Processing, Tools and Techniques), HCL
+                                    (Language Design,
+                                    Compiling and Assessment) and CCL (Mark-up and Interchange Formats and Techniques).
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <img src="images/portfolio/news/pdc_2021.jpeg" class="img-responsive" />
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="#"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="post-title">Poster in PCD@Coimbra</h2>
+                                <div class="author">
+                                    <i class="fa fa-user"></i> By <b>RQ</b> | <i class="fa fa-clock-o"></i> <time
+                                        datetime="2014-01-20">December 11th, 2020</time>
+                                </div>
+                                <div>
+                                    Álvaro Andrade, a 3rd year student of the Multimedia Degree, developed a poster in
+                                    code on the number 25 and was one of the finalists of PCD @ Coimbra. The poster was
+                                    one of the twenty-five posters chosen to be presented on December 9, at the event.
+                                </div>
+                                <div class="read-more-wrapper">
+                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="gap"></div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <div id="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" style="color: white;">
+                    &copy; 2021 uniMAD. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
