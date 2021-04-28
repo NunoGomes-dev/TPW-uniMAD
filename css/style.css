@@ -562,12 +562,6 @@ body > section {
 }
 
 @media screen and (min-width: 768px) {
-  #quote-carouse {
-    margin-bottom: 0;
-    padding: 0 40px 30px;
-    margin-top: 30px;
-  }
-
   #main-slider .carousel,
   #main-slider .carousel-inner,
   #main-slider .carousel-inner .item,
@@ -664,27 +658,4 @@ body > section {
   content: "";
   background-image: none !important;
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-ul.arrow li::before,
-ul.arrow-double li::before,
-ul.tick li::before,
-ul.cross li::before,
-ul.star li::before,
-ul.rss li::before,
-ul.arrow li::after,
-ul.arrow-double li::after,
-ul.tick li::after,
-ul.cross li::after,
-ul.star li::after,
-ul.rss li::after {
-  font-family: FontAwesome;
-  font-size: 10px;
-}
-
-.item blockquote p:before {
-  content: "\f10d";
-  font-family: Fontawesome;
-  float: left;
-  margin-right: 10px;
 }
