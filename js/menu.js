@@ -13,7 +13,7 @@ let menu = `
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="${ref}index.html">
-                <img src="${ref}images/logo.png" width="150" height="30" alt="uniMAD">
+                <img src="${ref}images/logo30060.webp" width="150" height="30" alt="uniMAD">
                 </a>
             </div>
             <div class="collapse navbar-collapse">
