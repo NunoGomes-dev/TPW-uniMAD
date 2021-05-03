@@ -158,11 +158,7 @@
 
       // Little timeout to make sure all the prettyPhoto initialize scripts has been run.
       // Useful in the event the page contain several init scripts.
-      setTimeout(function () {
-        $(
-          "a[" + pp_settings.hook + "^='" + hashRel + "']:eq(" + hashIndex + ")"
-        ).trigger("click");
-      }, 50);
+      setTimeout(function () {}, 50);
     }
 
     return this.unbind("click.prettyphoto").bind(
