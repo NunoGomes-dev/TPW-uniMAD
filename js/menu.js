@@ -1,10 +1,8 @@
-let ref = ''
-let pathName = document.location.pathname
-if (pathName.includes('projects') || pathName.includes('members')) {
-    ref = `../`
+let ref = "";
+let pathName = document.location.pathname;
+if (pathName.includes("projects") || pathName.includes("members")) {
+  ref = `../`;
 }
-
-
 let menu = `
 <div class="container">
             <div class="navbar-header">
@@ -37,21 +35,24 @@ let menu = `
                 </ul>
             </div>
         </div>
-`
+`;
+document.querySelector("header").innerHTML = menu;
 
-document.querySelector('header').innerHTML = menu
-
-
-if (pathName.endsWith('news.html')) {
-    document.querySelector('#news').style.color = "yellow"
-} else if (pathName.endsWith('projs.html')) {
-    document.querySelector('#projs').style.color = "yellow"
-} else if (pathName.endsWith('team.html')) {
-    document.querySelector('#team').style.color = "yellow"
-} else if (pathName.endsWith('about.html') || pathName.endsWith('facilities.html') || pathName.endsWith('awards.html') || pathName.endsWith('partnerships.html')) {
-    document.querySelector('#about').style.color = "yellow"
-} else if (pathName.endsWith('contacts.html')) {
-    document.querySelector('#contacts').style.color = "yellow"
-} else if (pathName.endsWith('publications.html')) {
-    document.querySelector('#publications').style.color = "yellow"
+if (pathName.endsWith("news.html")) {
+  document.querySelector("#news").style.color = "yellow";
+} else if (pathName.endsWith("projs.html")) {
+  document.querySelector("#projs").style.color = "yellow";
+} else if (pathName.endsWith("team.html")) {
+  document.querySelector("#team").style.color = "yellow";
+} else if (
+  pathName.endsWith("about.html") ||
+  pathName.endsWith("facilities.html") ||
+  pathName.endsWith("awards.html") ||
+  pathName.endsWith("partnerships.html")
+) {
+  document.querySelector("#about").style.color = "yellow";
+} else if (pathName.endsWith("contacts.html")) {
+  document.querySelector("#contacts").style.color = "yellow";
+} else if (pathName.endsWith("publications.html")) {
+  document.querySelector("#publications").style.color = "yellow";
 }

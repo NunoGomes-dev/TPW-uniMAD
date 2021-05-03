@@ -7,20 +7,15 @@
     <meta name="description" content="uniMAD">
     <meta name="author" content="uniMAD">
     <title>Home | uniMAD</title>
-    <link href="css/indexAnimate.css" rel="stylesheet" >
+    <script src="js/newIndexPage/indexjquery.js" ></script>
     <link href="css/indexPage.css" rel="stylesheet">
     <link href="css/indexStyle.css" rel="stylesheet">
-    <script src="js/newIndexPage/indexjquery.js" ></script>
-   
 
+    <link rel="preload" href="css/indexAnimate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/indexStyleSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" as="font" href="../fonts/Pe-icon-7-stroke.woff?-9uki6c" crossorigin="anonymous">
     <link rel="preload" as="font" href="../fonts/fontawesome-webfont.woff2?v=4.7.0" crossorigin="anonymous">
-
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
 
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
@@ -30,7 +25,6 @@
                 "images/bg/bg2.webp",
                 "images/bg/bg3.webp",
             ], { duration: 5000, fade: 500, centeredY: true });
-
             jQuery('body').children(".backstretch").children("img").attr("alt", "Carossel")
             $("#mapwrapper").gMap({
                 controls: false,
@@ -292,7 +286,7 @@
                     <div class="col-md-4">
                         <div class="post">
                             <div class="post-img-content">
-                                <img src="images/portfolio/proj_03.jfif" alt="Multidisciplinary Artistic Network of Art" width="800px" height="533px" class="img-responsive" />
+                                <img src="images/portfolio/proj_03.webp" alt="Multidisciplinary Artistic Network of Art" width="800px" height="533px" class="img-responsive" />
                                 <div class="overlay">
                                     </div>
                             </div>
@@ -377,9 +371,9 @@
         </div>
     </div>
 
-    <script src="js/newIndexPage/newPrettyPhoto.js" ></script>
-    <script src="js/newIndexPage/newBootstrapMin.js" ></script>
-    <script src="js/plugins.js" ></script>
-    <script src="js/newIndexPage/newInit.js" ></script>
+    <script src="js/newIndexPage/newPrettyPhoto.js" defer></script>
+    <script src="js/newIndexPage/newBootstrapMin.js" defer></script>
+    <script src="js/newIndexPage/indexPlugins.js" defer></script>
+    <script src="js/newIndexPage/newInit.js" defer></script>
 </body>
 </html>
