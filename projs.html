@@ -7,20 +7,16 @@
     <meta name="description" content="Projects Page">
     <meta name="author" content="">
     <title>Projects | uniMAD</title>
-
-<link href="css/minProjects.css" rel="stylesheet"><!-- limpo -->
-<link href="css/styleProjects.css" rel="stylesheet"><!-- limpo -->
+<link rel="preload" href="css/minProjects.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="css/styleProjects.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="css/indexAnimateProjs.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="css/minProjectsSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><!-- limpo -->
-<link rel="preload" href="css/styleProjectsSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><!-- limpo -->
+<link rel="preload" href="css/minProjectsSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="css/styleProjectsSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="shortcut icon" href="images/ico/favicon.ico">
-
-
 </head>
 <body>
     <div id="preloader"></div>
     <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
-        <script src="js/menu.js"></script>
     </header>
     <section id="single-page-slider" class="no-margin">
         <div class="carousel slide" data-ride="carousel">
@@ -61,7 +57,7 @@
                     <li class="portfolio-item 2021 isotope-item">
                         <div class="item-inner">
                             <a href="projects/juez.html">
-                                <img src="images/portfolio/projPage/juez.webp" alt="JUEZ Project" width="363" height="242">
+                                <img src="images/portfolio/projPage/juez.webp" loading="lazy" alt="JUEZ Project" width="363" height="242">
                             </a>
                             <h5>JuezLTI</h5>
                         </div>
@@ -69,7 +65,7 @@
                     <li class="portfolio-item 2021 isotope-item">
                         <div class="item-inner">
                             <a href="projects/fgpeplus.html">
-                                <img src="images/portfolio/projPage/fgpeplus.webp" alt="FGPE PLUS Project" width="363" height="242">
+                                <img src="images/portfolio/projPage/fgpeplus.webp" loading="lazy" alt="FGPE PLUS Project" width="363" height="242">
                             </a>
                             <h5>FGPE Plus</h5>
                         </div>
@@ -77,7 +73,7 @@
                     <li class="portfolio-item 2021 isotope-item">
                         <div class="item-inner">
                             <a href="projects/athena.html">
-                                <img src="images/portfolio/projPage/proj_04.webp" alt="Athena Project" width="363" height="242">
+                                <img src="images/portfolio/projPage/proj_04.webp" loading="lazy" alt="Athena Project" width="363" height="242">
                             </a>
                             <h5>ATHENA</h5>
                         </div>
@@ -85,7 +81,7 @@
                     <li class="portfolio-item 2021 isotope-item">
                         <div class="item-inner">
                             <a href="projects/contrast.html">
-                                <img src="images/portfolio/proj_03.webp" alt="Contrast Project" width="363" height="242">
+                                <img src="images/portfolio/proj_03.webp" loading="lazy" alt="Contrast Project" width="363" height="242">
                             </a>
                             <h5>CONTRAST</h5>
                         </div>
@@ -93,7 +89,7 @@
                     <li class="portfolio-item 2021 isotope-item">
                         <div class="item-inner">
                             <a href="projects/mrud.html">
-                                <img src="images/portfolio/projPage/proj_01.webp" alt="Mr.UD Project" width="363" height="242">
+                                <img src="images/portfolio/projPage/proj_01.webp" loading="lazy" alt="Mr.UD Project" width="363" height="242">
                             </a>
                             <h5>Mr. UD</h5>
                         </div>
@@ -101,7 +97,7 @@
                     <li class="portfolio-item 2019 isotope-item">
                         <div class="item-inner">
                             <a href="projects/fgpe.html">
-                                <img src="images/portfolio/projPage/proj_02.webp" alt="FGPE Project" width="363" height="242">
+                                <img src="images/portfolio/projPage/proj_02.webp" loading="lazy" alt="FGPE Project" width="363" height="242">
                             </a>
                             <h5>Framework for Gamified PE</h5>
                         </div>
@@ -120,7 +116,12 @@
             </div>
         </div>
     </div>
+    <script src="js/menu.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/newProjectsPage/projectsPrettyPhoto.js"></script><!-- limpo -->
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script><!-- limpo -->
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             'use strict';
@@ -130,7 +131,7 @@
                 "images/bg/bg3.webp",
             ], { duration: 5000, fade: 500 });
             jQuery('body').children(".backstretch").children("img").attr("alt", "Carossel")
-
+            jQuery('body').children(".backstretch").children("img").attr("loading", "lazy")
             $("#mapwrapper").gMap({
                 controls: false,
                 scrollwheel: false,
@@ -156,10 +157,6 @@
             });
         });
     </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/newProjectsPage/projectsPrettyPhoto.js"></script><!-- limpo -->
-    <script src="js/plugins.js"></script>
-    <script src="js/init.js"></script><!-- limpo -->
 </body>
 
 </html>
