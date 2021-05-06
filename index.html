@@ -7,55 +7,13 @@
     <meta name="description" content="uniMAD">
     <meta name="author" content="uniMAD">
     <title>Home | uniMAD</title>
-    <script src="js/newIndexPage/indexjquery.js"></script>
     <link href="css/indexPage.css" rel="stylesheet">
     <link href="css/indexStyle.css" rel="stylesheet">
-
-    <script src="js/newIndexPage/newPrettyPhoto.js" defer></script>
-    <script src="js/newIndexPage/newBootstrapMin.js" defer></script>
-    <script src="js/newIndexPage/indexPlugins.js" defer></script>
-    <script src="js/newIndexPage/newInit.js" defer></script>
-
     <link rel="preload" href="css/indexAnimate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/indexStyleSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" as="font" href="../fonts/Pe-icon-7-stroke.woff?-9uki6c" crossorigin="anonymous">
     <link rel="preload" as="font" href="../fonts/fontawesome-webfont.woff2?v=4.7.0" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            'use strict';
-            jQuery('body').backstretch([
-                "images/bg/bg1.webp",
-                "images/bg/bg2.webp",
-                "images/bg/bg3.webp",
-            ], { duration: 5000, fade: 500, centeredY: true });
-            jQuery('body').children(".backstretch").children("img").attr("alt", "Carossel")
-            $("#mapwrapper").gMap({
-                controls: false,
-                scrollwheel: false,
-                markers: [{
-                    latitude: 40.7566,
-                    longitude: -73.9863,
-                    icon: {
-                        image: "images/marker.webp",
-                        iconsize: [44, 44],
-                        iconanchor: [12, 46],
-                        infowindowanchor: [12, 0]
-                    }
-                }],
-                icon: {
-                    image: "images/marker.webp",
-                    iconsize: [26, 46],
-                    iconanchor: [12, 46],
-                    infowindowanchor: [12, 0]
-                },
-                latitude: 40.7566,
-                longitude: -73.9863,
-                zoom: 14
-            });   
-        });
-    </script>
 </head>
 
 <body>
@@ -375,5 +333,44 @@
             </div>
         </div>
     </div>
+    <script src="js/newIndexPage/indexjquery.js"></script>
+    <script src="js/newIndexPage/newPrettyPhoto.js" ></script>
+    <script src="js/newIndexPage/newBootstrapMin.js" ></script>
+    <script src="js/newIndexPage/indexPlugins.js" ></script>
+    <script src="js/newIndexPage/newInit.js" ></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/bg1.webp",
+                "images/bg/bg2.webp",
+                "images/bg/bg3.webp",
+            ], { duration: 5000, fade: 500, centeredY: true });
+            jQuery('body').children(".backstretch").children("img").attr("alt", "Carossel")
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    latitude: 40.7566,
+                    longitude: -73.9863,
+                    icon: {
+                        image: "images/marker.webp",
+                        iconsize: [44, 44],
+                        iconanchor: [12, 46],
+                        infowindowanchor: [12, 0]
+                    }
+                }],
+                icon: {
+                    image: "images/marker.webp",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46],
+                    infowindowanchor: [12, 0]
+                },
+                latitude: 40.7566,
+                longitude: -73.9863,
+                zoom: 14
+            });   
+        });
+    </script>
 </body>
 </html>

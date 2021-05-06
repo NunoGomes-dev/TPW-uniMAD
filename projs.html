@@ -10,48 +10,12 @@
 
 <link href="css/minProjects.css" rel="stylesheet"><!-- limpo -->
 <link href="css/styleProjects.css" rel="stylesheet"><!-- limpo -->
-<script src="js/jquery.js"></script>
-
 <link rel="preload" href="css/indexAnimateProjs.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="css/minProjectsSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><!-- limpo -->
 <link rel="preload" href="css/styleProjectsSecond.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><!-- limpo -->
-    
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            'use strict';
-            jQuery('body').backstretch([
-                "images/bg/bg1.webp",
-                "images/bg/bg2.webp",
-                "images/bg/bg3.webp",
-            ], { duration: 5000, fade: 500 });
-            jQuery('body').children(".backstretch").children("img").attr("alt", "Carossel")
+<link rel="shortcut icon" href="images/ico/favicon.ico">
 
-            $("#mapwrapper").gMap({
-                controls: false,
-                scrollwheel: false,
-                markers: [{
-                    latitude: 40.7566,
-                    longitude: -73.9863,
-                    icon: {
-                        image: "images/marker.webp",
-                        iconsize: [44, 44],
-                        iconanchor: [12, 46],
-                        infowindowanchor: [12, 0]
-                    }
-                }],
-                icon: {
-                    image: "images/marker.webp",
-                    iconsize: [26, 46],
-                    iconanchor: [12, 46],
-                    infowindowanchor: [12, 0]
-                },
-                latitude: 40.7566,
-                longitude: -73.9863,
-                zoom: 14
-            });
-        });
-    </script>
+
 </head>
 <body>
     <div id="preloader"></div>
@@ -156,6 +120,42 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/bg1.webp",
+                "images/bg/bg2.webp",
+                "images/bg/bg3.webp",
+            ], { duration: 5000, fade: 500 });
+            jQuery('body').children(".backstretch").children("img").attr("alt", "Carossel")
+
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    latitude: 40.7566,
+                    longitude: -73.9863,
+                    icon: {
+                        image: "images/marker.webp",
+                        iconsize: [44, 44],
+                        iconanchor: [12, 46],
+                        infowindowanchor: [12, 0]
+                    }
+                }],
+                icon: {
+                    image: "images/marker.webp",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46],
+                    infowindowanchor: [12, 0]
+                },
+                latitude: 40.7566,
+                longitude: -73.9863,
+                zoom: 14
+            });
+        });
+    </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/newProjectsPage/projectsPrettyPhoto.js"></script><!-- limpo -->
     <script src="js/plugins.js"></script>
